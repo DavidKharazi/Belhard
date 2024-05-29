@@ -196,7 +196,7 @@ async def start_lead(message: Message):
     collecting_data.add(chat_id)
     await message.reply("Пожалуйста, введите ваши данные в формате: Фамилия Имя Отчество Телефон Email")
 
-# Обработчики для сбора данных
+# Обработчик для сбора данных
 @dp.message()
 async def collect_data(message: Message):
     chat_id = message.chat.id
